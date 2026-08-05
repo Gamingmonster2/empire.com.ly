@@ -1,0 +1,37 @@
+title: الإمبراطوريات
+author: سيف الدين
+email: ""
+url: https://empire.com.ly
+baseurl: ""
+description: >
+  مدونة متخصصة في توثيق تاريخ الإمبراطوريات الكبرى وإمبراطوريات المال والشركات الضخمة.
+
+permalink: /:slug.html
+
+favicon: "logo.png"
+# goat_counter: "yoursitename"
+
+remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "auto"
+  back_home_text: ".."
+  date_format: "%Y-%m-%d"
+  show_description: true
+  lowercase_titles: false
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jektex
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
